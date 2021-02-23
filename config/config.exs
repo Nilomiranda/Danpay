@@ -18,6 +18,10 @@ config :danpay, DanpayWeb.Endpoint,
   pubsub_server: Danpay.PubSub,
   live_view: [signing_salt: "p19ei8sv"]
 
+config :danpay, Danpay.Repo,
+  migration_primary_key: [type: :binary_id],
+  migration_foreign_key: [type: :binary_id]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
