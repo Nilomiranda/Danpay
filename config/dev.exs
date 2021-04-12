@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :danpay, Danpay.Repo,
-  username: "admin",
-  password: "admin",
+  username: "postgres",
+  password: "",
   database: "danpay_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
